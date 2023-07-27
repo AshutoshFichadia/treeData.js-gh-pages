@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mihai</title>
+    <!--Optional-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Required-->
+    <link rel="stylesheet" href="css/treeData.min.css">
+</head>
+<body>
+
+<div id="container">
+  <div id="tree"></div>
+</div>
+
+<script type="text/javascript" src="js/treeData.js"></script>
+<script>
+ 
+var tree = {
+     Team : {value : "Team", parent : ""},
+     Mihai : {value : "Mihai Vasilescu <br> Associate Manager", parent : "Team"},
+     Abu : {value : "Abu Kazi Masudan Nabi<br>Software Developer in Test III", parent : "Mihai"},
+     Adina : {value : "Adina Nechita<br>QA/Test Analyst Sr", parent : "Mihai"},
+     Christine : {value : "Christine Lai<br>Software Developer Sr", parent : "Mihai"},
+     Jaron : {value : "Jaron Bloom<br>Intern - Test Engineer", parent : "Mihai"},
+     Karankumar : {value : "Karankumar Shah<br>Software Developer I", parent : "Mihai"},
+     Lisa : {value : "Lisa Cui<br>Test Engineer Sr", parent : "Mihai"},
+     Phillipp : {value : "Phillipp Efimov<br>Software Developer", parent : "Mihai"},
+     William : {value : "William Ho<br>Software Developer Sr", parent : "Mihai"}
+
+};
+
+
+ 
+    TreeData(tree, "#tree");
+
+
+</script>
+</body>
+</html>

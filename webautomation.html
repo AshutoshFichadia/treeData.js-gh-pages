@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Automation</title>
+    <!--Optional-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Required-->
+    <link rel="stylesheet" href="css/treeData.min.css">
+</head>
+<body>
+
+<div id="container">
+  <div id="tree"></div>
+</div>
+
+<script type="text/javascript" src="js/treeData.js"></script>
+<script>
+ 
+var tree = {
+     WebAutomation : {value : "Web Automation", parent : ""},
+     Abu : {value : "Abu Kazi Masudan Nabi<br>Software Developer in Test III", parent : "WebAutomation"},
+     AbuDetails: {value : "Contact Card:<br>abu.kazimasudannabi@ceridian.com<br>Phone Number<br>LinkedIn:<br>Expertise:<br>", parent : "Abu"},
+     Jaron : {value : "Jaron Bloom<br>Intern - Test Engineer", parent : "WebAutomation"},
+     JaronDetails : {value : "Contact Card:<br>jaron.bloom@ceridian.com<br>Phone Number<br>LinkedIn:<br>Expertise:<br>", parent : "Jaron"},
+     Jainam : {value : "Jainam Panchal<br>Software Developer in Test Associate", parent : "WebAutomation"},
+     JainamDetails : {value : "Contact Card:<br>jainam.panchal@ceridian.com<br>Phone Number:sfgsg<br>LinkedIn:<br>Expertise:<br>", parent : "Jainam"},
+     Lisa : {value : "Lisa Cui<br>Test Engineer Sr", parent : "WebAutomation"},
+     LisaDetails : {value : "Contact Card:<br>lisa.cui@ceridian.com<br>Phone Number<br>LinkedIn:<br>Expertise:<br>", parent : "Lisa"}
+
+};
+
+
+ 
+    TreeData(tree, "#tree");
+
+
+</script>
+</body>
+</html>

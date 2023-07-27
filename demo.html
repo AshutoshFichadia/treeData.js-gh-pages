@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceridian OrgTree</title>
+    <!--Optional-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Required-->
+    <link rel="stylesheet" href="css/treeData.min.css">
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="Enter Name">
+      <button type="button">Search</button>
+  </div>
+  <div id="departments">
+      <button class="btn-create" type="button" onclick="generateTree('HR')" value="HR" id="HR"><a>HR</a></button>
+      <button class="btn-create" class = "btn-create" type="button" onclick="generateTree('Payroll')" value="Payroll" id="Payroll"><a>Payroll</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('WFM')" value="WFM" id="WFM"><a>WFM</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('Benefits')" value="Benefits" id="Benefits"><a href="benefits.html" target="_blank">Benefits</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('Platform')" value="Platform" id="Platform"><a>Platform</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('CM')" value="CM" id="CM"><a>CM</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('TestOps')" value="Test Ops" id="TestOps"><a>Test Ops</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('Mobile')" value="Mobile" id="Mobile"><a>Mobile</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('Talent')" value="Talent" id="Talent"><a>Talent</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('Wallet')" value="Wallet" id="Wallet"><a></a>Wallet</button>
+      <button class="btn-create" type="button" onclick="generateTree('Integrations')" value="Integrations" id="Integrations"><a>Integrations</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('PublicSector')" value="Public Sector" id="PublicSector"><a>Public Sector</a></button>
+      <button class="btn-create" type="button" onclick="generateTree('DataAnalytics')" value="Data & Analytics" id="DataAnalytics"><a>Data & Analytics</a></button>
+
+
+  </div>
+<div id="container">
+  <div id="tree"></div>
+</div>
+
+<script type="text/javascript" src="js/treeData.js"></script>
+</body>
+</html>

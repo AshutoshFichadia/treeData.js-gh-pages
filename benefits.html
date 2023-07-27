@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Benefits</title>
+    <!--Optional-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Required-->
+    <link rel="stylesheet" href="css/treeData.min.css">
+</head>
+<body>
+
+<div id="container">
+  <div id="tree"></div>
+</div>
+
+<script type="text/javascript" src="js/treeData.js"></script>
+<script>
+ //Source conttrol, text box, correct parent names
+var tree = {
+     benefits : {value : "Benefits", parent : ""},
+     Samir : {value : "Samir Shah", parent : "benefits"},
+     Rohit : {value : "Rohit Kaushal", parent : "Samir"},
+     Combined : {value : "Combined", parent : "Samir"},
+     Mihai : {value : "Mihai", parent : "Samir"},
+     Web2 : {value : "Web 2", parent : "Combined"},
+     Mobile : {value : "Mobile", parent : "Combined"},
+     WebAutomation : {value : "Web Automation", parent : "Combined"},
+     MobileAutomation : {value : "Mobile Automation", parent : "Combined"},
+     Web1 : {value : "Web 1", parent : "Combined"}
+
+};
+
+
+ 
+    TreeData(tree, "#tree");
+
+
+</script>
+</body>
+</html>
