@@ -1,6 +1,6 @@
 # Extensions to install in VS CODE
 Prettier - Readable JS and CSS
-Open in Browser - To run code in Browser from VSCode
+,Open in Browser - To run code in Browser from VSCode
 
 # treeData.js
 
